@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>document</title>
+  </head>
+  <body>
+    <div id="dark-covering"></div>
+    <div class="main-container">
+      <header>
+        <div class="left-header">
+          <button class="nav-btn">
+            <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z"
+                fill="#69707D"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <h1>sneakers</h1>
+          <div class="desktop-nav">
+            <ul>
+              <li><a class="link">Collection</a></li>
+              <li><a class="link">Men</a></li>
+              <li><a class="link">Women </a></li>
+              <li><a class="link">Contact </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-header">
+          <div class="cart-container">
+            <button class="cart-btn">
+              <h4 class="number" id="num"></h4>
+
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill="#69707D"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </button>
+            <div class="cart-basket">
+              <h4>cart</h4>
+              <div class="cart">
+                <p class="empty">cart is empty</p>
+              </div>
+            </div>
+          </div>
+
+          <img class="avartar-img" src="./images/image-avatar.png" alt="" />
+        </div>
+      </header>
+      <nav class="side-nav">
+        <button class="close-nav">
+          <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+              fill="#69707D"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <ul>
+          <li><a class="link">Colylection</a></li>
+          <li><a class="link">Men</a></li>
+          <li><a class="link">Women </a></li>
+          <li><a class="link">Contact </a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="left-main">
+          <div class="image-display">
+            <div class="img">
+              <img class="current-image" src="./images/image-product-1.jpg" />
+            </div>
+            <div class="slide-btn" id="hide-btn">
+              <div class="show-prev">
+                <button class="prev">
+                  <svg
+                    width="12"
+                    height="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 1 3 9l8 8"
+                      stroke="#1D2026"
+                      stroke-width="3"
+                      fill="none"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="show-next">
+                <button class="next">
+                  <svg
+                    width="13"
+                    height="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m2 1 8 8-8 8"
+                      stroke="#1D2026"
+                      stroke-width="3"
+                      fill="none"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="other-image">
+            <ul>
+              <li>
+                <span class="image-overlay view"></span>
+                <img
+                  class="choose-img"
+                  src="./images/image-product-1.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <span class="image-overlay"></span>
+                <img
+                  class="choose-img"
+                  src="./images/image-product-2.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <span class="image-overlay"></span>
+                <img
+                  class="choose-img"
+                  src="./images/image-product-3.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <span class="image-overlay"></span>
+                <img
+                  class="choose-img"
+                  src="./images/image-product-4.jpg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-main">
+          <div class="product-details">
+            <h5>SNEAKER COMPANY</h5>
+            <h1>
+              Fall Limited Edition <br />
+              Sneakers
+            </h1>
+            <p>
+              these low profile sneakers are perfect casual wear company.
+              feauturing a durable rubber outer sole,they will withstand
+              everything the weather can offer
+            </p>
+          </div>
+          <div class="amount-details">
+            <div class="current-price">
+              <h1>$125.00</h1>
+              <span id="discount">50%</span>
+            </div>
+            <div class="previous-price">
+              <p>$250.00</p>
+              <span id="stroke"></span>
+            </div>
+          </div>
+          <div class="desktop">
+            <div class="number-of-items-purchase">
+              <button class="minus">
+                <svg
+                  width="12"
+                  height="4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <path
+                      d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z"
+                      id="a"
+                    />
+                  </defs>
+                  <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a" />
+                </svg>
+              </button>
+
+              <h4 class="number">0</h4>
+              <button class="plus">
+                <svg
+                  width="12"
+                  height="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <path
+                      d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
+                      id="b"
+                    />
+                  </defs>
+                  <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b" />
+                </svg>
+              </button>
+            </div>
+            <div class="add-to-cart">
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill="#ffffff"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <span>Add to cart</span>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="lightbox">
+        <ul class="lightbox-ul">
+          <li id="light-box-close-icon">
+            <button id="lightbox-close-btn">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                  fill="#df753a"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </li>
+          <li class="light-display-image">
+            <img
+              class="current-image"
+              id="light-image"
+              src="./images/image-product-1.jpg"
+              alt=""
+            />
+            <div class="slide-btn">
+              <div class="show-prev">
+                <button class="prev" id="prev">
+                  <svg
+                    width="12"
+                    height="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 1 3 9l8 8"
+                      stroke="#1D2026"
+                      stroke-width="3"
+                      fill="none"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="show-next">
+                <button class="next" id="next">
+                  <svg
+                    width="13"
+                    height="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m2 1 8 8-8 8"
+                      stroke="#1D2026"
+                      stroke-width="3"
+                      fill="none"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+          <ul class="light-other-ul">
+            <li>
+              <span class="image-overlay view"></span>
+              <img
+                class="choose-img"
+                src="./images/image-product-1.jpg"
+                alt=""
+              />
+            </li>
+            <li>
+              <span class="image-overlay"></span>
+              <img
+                class="choose-img"
+                src="./images/image-product-2.jpg"
+                alt=""
+              />
+            </li>
+            <li>
+              <span class="image-overlay"></span>
+              <img
+                class="choose-img"
+                src="./images/image-product-3.jpg"
+                alt=""
+              />
+            </li>
+            <li>
+              <span class="image-overlay"></span>
+              <img
+                class="choose-img"
+                src="./images/image-product-4.jpg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
