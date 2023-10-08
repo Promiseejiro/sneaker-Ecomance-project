@@ -210,7 +210,7 @@ header {
   padding: 2em;
 }
 .current-image {
-  height: 30em;
+  height: auto;
   width: 100%;
 }
 
@@ -360,7 +360,7 @@ header {
   }
   .current-image {
     border-radius: 10px;
-    height: 30em;
+    height: auto;
   }
   .cart-basket {
     width: 25em;
@@ -444,7 +444,7 @@ header {
     align-items: flex-end;
   }
   .lightbox-image {
-    height: 26em;
+    height: auto;
     width: 100%;
     border-radius: 10px;
   }
